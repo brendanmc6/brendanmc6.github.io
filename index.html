@@ -1,36 +1,68 @@
 <style>
-  h1 {
-  color: red;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
 
   body {
     background: grey;
   }
 
+   .card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  } 
+  
+  .active:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
   .navbar {
-    background: Red;
-    height: 4rem;
+    position: fixed;
+    width: calc(100% - 15px);
+    min-width: 360px;
+    margin: 15px;
+    background: white;
+    border-radius: 5px;
   }
   
   .logo {
-    background: blue;
-    display: inline-block;
-    margin:
+    font-size: 48px;
+    font-weight: 100;
+    padding: 5px 5px 5px 15px;
   }
-
+  
+  .nav-button {
+    background: #4db6ac;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+      background: red;
+    }
+    
+    .logo {
+      font-size: 30px;
+    }
+    
+    }
 </style>
 
 
 <!DOCTYPE html>
 <head>
   <link href="./style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      Brendan McGill
-    </div>
+<!-- Responsive Header/Nav Bar with Logo and Buttons-->
+  <div class="navbar card">
+    <div class="logo">Brendan McGill</div>
   </div>
-
+  
+  <div style="height: 2000px"> big div </div>
+  
 </body>
 </html>
