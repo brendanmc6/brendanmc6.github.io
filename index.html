@@ -1,9 +1,16 @@
 <style>
+/* COLORS FOR LATER USE:
+nice teal #4db6ac
+nic red #ef5350
+*/
+
   * {
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
   }
 
   body {
@@ -20,34 +27,49 @@
 
   .navbar {
     position: fixed;
-    width: calc(100% - 15px);
-    min-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 30px);
+    min-width: 320px;
     margin: 15px;
     background: white;
     border-radius: 5px;
+    align-items: center;
+    justify-content: flex-end;
   }
+  
+  .button-container{
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .button {
+    background: #ef5350;
+    padding: 8px 0;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    width: 8vw;
+    text-align: center;
+    min-width: 85;
+    }
   
   .logo {
     font-size: 48px;
     font-weight: 100;
     padding: 5px 5px 5px 15px;
+    margin-right: auto;
   }
   
-  .nav-button {
-    background: #4db6ac;
-    margin: 5px;
-  }
-  
-  @media screen and (max-width: 320px) {
-    body {
-      background: red;
-    }
-    
+  @media screen and (max-width: 720px) {
     .logo {
       font-size: 30px;
     }
-    
-    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {background: red;}
+  }
 </style>
 
 
@@ -60,9 +82,12 @@
 <!-- Responsive Header/Nav Bar with Logo and Buttons-->
   <div class="navbar card">
     <div class="logo">Brendan McGill</div>
+    <div class="button-container">
+      <div class="button">resume</div>
+      <div class="button">portfolio</div>
+      <div class="button">blog</div>
+    </div>
   </div>
-  
-  <div style="height: 2000px"> big div </div>
   
 </body>
 </html>
