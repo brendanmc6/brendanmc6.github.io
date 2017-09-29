@@ -28,8 +28,10 @@ gray bg eceff1
   
   .card-1:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: white;
+    cursor: pointer;
   }
-  
+    
   .card-2 {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
@@ -81,13 +83,23 @@ gray bg eceff1
     margin-left: 15px;
   }
   
+  .banner {
+    position: absolute;
+    background-image: url("http://brendanmc6.github.io/8775428119_af18975128_o.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-position: 0 92%;
+    height: 30%;
+    width: 100%;
+    }
+  
   @media screen and (max-width: 690px) {
     .logo {
       font-size: 30px;
     }
     .button-container {
       margin: 5px;
-      }
+    }
   }
   
   @media screen and (max-width: 550px) {
@@ -124,6 +136,9 @@ gray bg eceff1
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 </head>
 <body>
+
+  <div class="banner card-4"></div>
+  
 <!-- Responsive Header/Nav Bar with Logo and Buttons-->
   <div class="navbar card-5">
     <div class="logo">Brendan McGill</div>
