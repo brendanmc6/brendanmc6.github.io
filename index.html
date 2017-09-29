@@ -2,7 +2,10 @@
 /* COLORS FOR LATER USE:
 nice teal #4db6ac
 nic red #ef5350
+gray bg eceff1
 */
+
+
 
   * {
     margin: 0;
@@ -14,15 +17,33 @@ nic red #ef5350
   }
 
   body {
-    background: grey;
+    background: #eceff1;
   }
 
-   .card {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  } 
+/* CARD DROP SHADOWS incl. hover action */
+  .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
   
-  .active:hover {
+  .card-1:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .card-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
 
   .navbar {
@@ -30,7 +51,6 @@ nic red #ef5350
     display: flex;
     flex-wrap: wrap;
     width: calc(100% - 30px);
-    min-width: 320px;
     margin: 15px;
     background: white;
     border-radius: 5px;
@@ -40,36 +60,61 @@ nic red #ef5350
   
   .button-container{
     display: flex;
-    margin-right: 10px;
+    margin-right: 15px;
   }
   
   .button {
     background: #ef5350;
-    padding: 8px 0;
-    margin: 10px;
+    padding: 8px;
+    margin: 1vw 1vw 1vw 1vw;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-    width: 8vw;
     text-align: center;
-    min-width: 85;
+    min-width: 4rem;
     }
   
   .logo {
     font-size: 48px;
     font-weight: 100;
-    padding: 5px 5px 5px 15px;
+    padding: 5px 5px 5px 5px;
     margin-right: auto;
+    margin-left: 15px;
   }
   
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 690px) {
     .logo {
       font-size: 30px;
     }
+    .button-container {
+      margin: 5px;
+      }
+  }
+  
+  @media screen and (max-width: 550px) {
+    body {
+      background: green;
+    }
+    
+    .navbar {
+      justify-content: space-around;
+    }
+    
+    .button {
+      padding: 2vw 1vw;
+    }
+    
+    .logo {
+      margin: auto;
+      }
   }
   
   @media screen and (max-width: 320px) {
-    body {background: red;}
+    body {
+      background: red;
+    }
   }
+  
+    
 </style>
 
 
@@ -80,12 +125,12 @@ nic red #ef5350
 </head>
 <body>
 <!-- Responsive Header/Nav Bar with Logo and Buttons-->
-  <div class="navbar card">
+  <div class="navbar card-5">
     <div class="logo">Brendan McGill</div>
     <div class="button-container">
-      <div class="button">resume</div>
-      <div class="button">portfolio</div>
-      <div class="button">blog</div>
+      <div class="button card-1">resume</div>
+      <div class="button card-1">portfolio</div>
+      <div class="button card-1">blog</div>
     </div>
   </div>
   
