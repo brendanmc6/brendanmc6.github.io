@@ -1,153 +1,157 @@
-<style>
-/* COLORS FOR LATER USE:
-nice teal #4db6ac
-nic red #ef5350
-gray bg eceff1
-*/
-
-
-
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  body {
-    background: #eceff1;
-  }
-
-/* CARD DROP SHADOWS incl. hover action */
-  .card-1 {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  
-  .card-1:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    color: white;
-    cursor: pointer;
-  }
-    
-  .card-2 {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  }
-  
-  .card-3 {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  
-  .card-4 {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-  
-  .card-5 {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  }
-
-  .navbar {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100% - 30px);
-    margin: 15px;
-    background: white;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .button-container{
-    display: flex;
-    margin-right: 15px;
-  }
-  
-  .button {
-    background: #ef5350;
-    padding: 8px;
-    margin: 1vw 1vw 1vw 1vw;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-    text-align: center;
-    min-width: 4rem;
-    }
-  
-  .logo {
-    font-size: 48px;
-    font-weight: 100;
-    padding: 5px 5px 5px 5px;
-    margin-right: auto;
-    margin-left: 15px;
-  }
-  
-  .banner {
-    position: absolute;
-    background-image: url("http://brendanmc6.github.io/8775428119_af18975128_o.jpg");
-    background-origin: content-box;
-    background-size: cover;
-    background-position: 0 92%;
-    height: 30%;
-    width: 100%;
-    }
-  
-  @media screen and (max-width: 690px) {
-    .logo {
-      font-size: 30px;
-    }
-    .button-container {
-      margin: 5px;
-    }
-  }
-  
-  @media screen and (max-width: 550px) {
-    body {
-      background: green;
-    }
-    
-    .navbar {
-      justify-content: space-around;
-    }
-    
-    .button {
-      padding: 2vw 1vw;
-    }
-    
-    .logo {
-      margin: auto;
-      }
-  }
-  
-  @media screen and (max-width: 320px) {
-    body {
-      background: red;
-    }
-  }
-  
-    
-</style>
-
-
 <!DOCTYPE html>
 <head>
-  <link href="./style.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://use.fontawesome.com/25a8753216.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
-  <div class="banner card-4"></div>
-  
-<!-- Responsive Header/Nav Bar with Logo and Buttons-->
-  <div class="navbar card-5">
-    <div class="logo">Brendan McGill</div>
+  <div class="banner-image card-4"></div>
+  <div class="banner card-4">
+    <div class="logo">
+      Brendan McGill
+    </div>
     <div class="button-container">
-      <div class="button card-1">resume</div>
+      <div class="button" style="background: #ffcdd2; color: white;">resume</div>
       <div class="button card-1">portfolio</div>
-      <div class="button card-1">blog</div>
+      <div class="button card-1">extra</div>
     </div>
   </div>
-  
+  <div class="container">
+    <div class="column left">
+      <div class="profile card-4">
+        <div class="profile-photo card-2"></div>
+        <div class="profile-content-container">
+          <div class="profile-text-left">
+            age:<br/>
+            where:<br/>
+            email:<br/>
+            phone:
+          </div>
+          <div class="profile-text-right">
+            27<br>freiburg<br/>brendanmc6@gmail.com<br/>+49 176 6500 0920
+          </div>
+          <div class="profile-button-container">
+            <a href="https://www.linkedin.com/in/brendanmc6" target="_blank"><i class="fa fa-linkedin-square card-1" aria-hidden="true"></i></a>
+            <div class="profile-button card-1">download resume</div>
+          </div>
+        </div>
+      </div>
+      <div class="content card-3">
+        <div class="content-banner">summary</div>
+        <div class="content-text">
+          Born in SoCal, studied in NorCal, currently living in Germany. I am proud to have a diverse, multi-disciplinary and international background with a range of technical and non-technical skills and experiences.
+          This includes several thousand hours combined experience with ArcGIS, QGIS, and Excel; some basic programming knowledge (Python/ArcPy, CSS & HTML); and plenty of public presentation, workshop, and writing experience.
+          I am passionate about sustainability, car-free living, human-scale cities, travel, making music, PC gaming, and beer brewing!
+        </div>
+      </div>
+      <div class="content card-3"> <!-- achievements section -->
+        <div class="content-banner">achievements</div>
+        <details>
+          <summary><i class="material-icons">star</i>DAAD-Promos-Stipendium</summary>
+          <p>
+            2016 Scholarship award for select Uni-Freiburg students who are studying or performing research outside of Europe.
+          </p>
+        </details>
+        <details>
+          <summary><i class="material-icons">star</i>Honor Society for International Scholars</summary>
+          <p>
+            Inducted into the 2013 Phi Beta Delta Honor Society for International Scholars recognizing scholarly achievement in international education.
+          </p>
+        </details>
+        <details>
+          <summary><i class="material-icons">star</i>Goetha Institut Zertifkat Deutsch: B1</summary>
+          <p>
+            Formal German Language certification acquired in 2012. Current (unofficial) German language proficiency is around C1.
+          </p>
+        </details>
+      </div>
+    </div>
+    <div class="column right">
+        <div class="content card-3"> <!-- Experience Section -->
+          <div class="content-banner">experience</div>
+          <details>
+            <summary><i class="material-icons">work</i>EIFER | European Institute for Energy Research</summary>
+            <div>
+              <span>Research Assistant</span> | Nov. 2016 - Oct. 2017 | Karlsruhe, Germany
+            </div>
+            <ul>
+              <li>Exploring GIS based methods for public participation in urban governance.</li>
+              <li>Designed and implemented EU-Interreg "UrbanInno" pilot project: E-Bike Vision for Karlsruhe.</li>
+              <li>Built and launched online participation web-app, hosted public visioning workshop, conducted qualitative interviews.</li>
+            </ul>
+          </details>
+          <details>
+            <summary><i class="material-icons">work</i>Unison Group Kyrgyzstan</summary>
+            <div>
+              <span>Research Assistant</span> | Aug. 2016 - Oct. 2016 | Bishkek, Kyrgyzstan
+            </div>
+            <ul>
+              <li>Local Kyrgyz NGO focused on renewable energy, climate change, and good governance issues.</li>
+              <li>Conducted and presented research on barriers to Spatial Data Infrastructure & implications for climate adaptation-- qualitative interviews with development experts and government officials.</li>
+              <li>Capacity building: conducted GIS courses for local NGOs and government employees.</li>
+            </ul>
+          </details>
+          <details>
+            <summary><i class="material-icons">work</i>REC Consultants Inc.</summary>
+            <div>
+              <span>GIS Analyst II</span> | Aug. 2013 - Sept. 2015 | San Diego, California
+            </div>
+            <ul>
+              <li>Spatial analysis/research, creation of detailed and aesthetic habitat, species, and development impact maps. Utilized Python/ArcPy programming to automate time-consuming mapping tasks.</li>
+              <li>Environmental impact reporting, permitting, field work, and due diligence. Worked closely with planners, biologists, engineers and developers on a daily basis.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="content card-3"> <!-- Education Section -->
+          <div class="content-banner">education</div>
+          <details>
+            <summary><i class="material-icons">school</i>MSc. Environmental Governance</summary>
+            <div>
+              <span>Universität Freiburg</span> | February 2017 | Freiburg, Germany
+            </div>
+            <p>
+              Unique multi-national & interdisciplinary program combining environmental management, environmental politics, and global development curriculum.
+              Study and teaching methods emphasize presentation, intercultural communication, group work, and research skills development.
+            </p>
+          </details>
+          <details>
+            <summary><i class="material-icons">school</i>B.A. Environmental Studies & Planning </summary>
+            <div>
+              <span>Sonoma State University</span> | Class of 2013 | Rohnert Park, California
+            </div>
+            <p>
+              Project-oriented program blending urban and environmental planning. Course work
+              included sustainable planning practices, urban design, land use law, environmental
+              impact reporting, physical sciences, environmental research and writing
+            </p>
+          </details>
+        </div>
+        <div class="content card-3"> <!-- Research Section -->
+          <div class="content-banner">research</div>
+          <details>
+            <summary><i class="material-icons">search</i>Crowdsourcing and Participatory GIS for Sustainable Urban Development</summary>
+            <div>
+              <span>MSc. Thesis</span> | Expected completion February 2017
+            </div>
+            <p>
+              A case study of web-based participation for e-bike infrastructure planning in Karlsruhe, Germany.
+            </p>
+          </details>
+          <details>
+            <summary><i class="material-icons">search</i>Spatial Data Infrastructure in Kyrgyzstan</summary>
+            <div>
+              <span>Qualitative Research Study</span> | October 2016 | Awaiting Publication
+            </div>
+            <p>
+              Limitations, opportunities, and and implications for climate adaptation.
+              Conducted interviews with key geospatial experts in Bishkek, Kyrgyzstan to assess the state of SDI.
+              Presented findings to a large audience of government officials and NGOs, and to the United Nations Development Programme.
+            </p>
+          </details>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
