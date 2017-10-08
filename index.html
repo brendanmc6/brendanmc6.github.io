@@ -1,28 +1,160 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://use.fontawesome.com/25a8753216.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <div class="banner-image card-4"></div>
   <div class="banner card-4">
-    <div class="logo">Brendan McGill</div>
+    <div class="logo">
+      Brendan McGill
+    </div>
     <div class="button-container">
-      <div class="button card-1">Resume</div>
-      <div class="button card-1">Portfolio</div>
-      <div class="button card-1">Extra</div>
+      <div class="button" style="background: #ffcdd2; color: white;">resume</div>
+      <div class="button card-1">portfolio</div>
+      <div class="button card-1">extra</div>
     </div>
   </div>
   <div class="container">
+
     <div class="column left">
-      <div class="profile card-4"> </div>
-      <div class="content card-3">In CSS, by default, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.</div>
+      <div class="profile card-4">
+        <div class="profile-photo card-2"></div>
+        <div class="profile-content-container">
+          <div class="profile-text-left">
+            age:<br/>
+            where:<br/>
+            email:<br/>
+            phone:
+          </div>
+          <div class="profile-text-right">
+            27<br>freiburg<br/>brendanmc6@gmail.com<br/>+49 176 6500 0920
+          </div>
+          <div class="profile-button-container">
+            <a href="https://www.linkedin.com/in/brendanmc6" target="_blank"><i class="fa fa-linkedin-square card-1" aria-hidden="true"></i></a>
+            <div class="profile-button card-1">download resume</div>
+          </div>
+        </div>
+      </div>
+      <div class="content card-3">
+        <div class="content-banner">summary</div>
+        <div class="content-text">
+          Born in SoCal, studied in NorCal, currently living in Germany. I am proud to have a diverse, multi-disciplinary and international background with a range of technical and non-technical skills and experiences.
+          This includes several thousand hours combined experience with ArcGIS, QGIS, and Excel; some basic programming knowledge (Python/ArcPy, CSS & HTML); and plenty of public presentation, workshop, and writing experience.
+          I am passionate about sustainability, car-free living, human-scale cities, travel, making music, PC gaming, and beer brewing!
+        </div>
+      </div>
+      <div class="content card-3"> <!-- achievements section -->
+        <div class="content-banner">achievements</div>
+        <details>
+          <summary><i class="material-icons">star</i>DAAD-Promos-Stipendium</summary>
+          <p>
+            2016 Scholarship award for select Uni-Freiburg students who are studying or performing research outside of Europe.
+          </p>
+        </details>
+        <details>
+          <summary><i class="material-icons">star</i>Honor Society for International Scholars</summary>
+          <p>
+            Inducted into the 2013 Phi Beta Delta Honor Society for International Scholars recognizing scholarly achievement in international education.
+          </p>
+        </details>
+        <details>
+          <summary><i class="material-icons">star</i>Goetha Institut Zertifkat Deutsch: B1</summary>
+          <p>
+            Formal German Language certification acquired in 2012. Current (unofficial) German language proficiency is around C1.
+          </p>
+        </details>
+      </div>
     </div>
+
     <div class="column right">
-      <div class="content card-3">In CSS, by default, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.</div>
-      <div class="content card-3">In CSS, by default, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.</div>
+        <div class="content card-3"> <!-- Experience Section -->
+          <div class="content-banner">experience</div>
+          <details>
+            <summary><i class="material-icons">work</i>EIFER | European Institute for Energy Research</summary>
+            <div>
+              <span>Research Assistant</span> | Nov. 2016 - Oct. 2017 | Karlsruhe, Germany
+            </div>
+            <ul>
+              <li>Exploring GIS based methods for public participation in urban governance.</li>
+              <li>Designed and implemented EU-Interreg "UrbanInno" pilot project: E-Bike Vision for Karlsruhe.</li>
+              <li>Built and launched online participation web-app, hosted public visioning workshop, conducted qualitative interviews.</li>
+            </ul>
+          </details>
+          <details>
+            <summary><i class="material-icons">work</i>Unison Group Kyrgyzstan</summary>
+            <div>
+              <span>Research Assistant</span> | Aug. 2016 - Oct. 2016 | Bishkek, Kyrgyzstan
+            </div>
+            <ul>
+              <li>Local Kyrgyz NGO focused on renewable energy, climate change, and good governance issues.</li>
+              <li>Conducted and presented research on barriers to Spatial Data Infrastructure & implications for climate adaptation-- qualitative interviews with development experts and government officials.</li>
+              <li>Capacity building: conducted GIS courses for local NGOs and government employees.</li>
+            </ul>
+          </details>
+          <details>
+            <summary><i class="material-icons">work</i>REC Consultants Inc.</summary>
+            <div>
+              <span>GIS Analyst II</span> | Aug. 2013 - Sept. 2015 | San Diego, California
+            </div>
+            <ul>
+              <li>Spatial analysis/research, creation of detailed and aesthetic habitat, species, and development impact maps. Utilized Python/ArcPy programming to automate time-consuming mapping tasks.</li>
+              <li>Environmental impact reporting, permitting, field work, and due diligence. Worked closely with planners, biologists, engineers and developers on a daily basis.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="content card-3"> <!-- Education Section -->
+          <div class="content-banner">education</div>
+          <details>
+            <summary><i class="material-icons">school</i>MSc. Environmental Governance</summary>
+            <div>
+              <span>Universität Freiburg</span> | February 2017 | Freiburg, Germany
+            </div>
+            <p>
+              Unique multi-national & interdisciplinary program combining environmental management, environmental politics, and global development curriculum.
+              Study and teaching methods emphasize presentation, intercultural communication, group work, and research skills development.
+            </p>
+          </details>
+          <details>
+            <summary><i class="material-icons">school</i>B.A. Environmental Studies & Planning </summary>
+            <div>
+              <span>Sonoma State University</span> | Class of 2013 | Rohnert Park, California
+            </div>
+            <p>
+              Project-oriented program blending urban and environmental planning. Course work
+              included sustainable planning practices, urban design, land use law, environmental
+              impact reporting, physical sciences, environmental research and writing
+            </p>
+          </details>
+        </div>
+        <div class="content card-3"> <!-- Research Section -->
+          <div class="content-banner">research</div>
+          <details>
+            <summary><i class="material-icons">search</i>Crowdsourcing and Participatory GIS for Sustainable Urban Development</summary>
+            <div>
+              <span>MSc. Thesis</span> | Expected completion February 2017
+            </div>
+            <p>
+              A case study of web-based participation for e-bike infrastructure planning in Karlsruhe, Germany.
+            </p>
+          </details>
+          <details>
+            <summary><i class="material-icons">search</i>Spatial Data Infrastructure in Kyrgyzstan</summary>
+            <div>
+              <span>Qualitative Research Study</span> | October 2016 | Awaiting Publication
+            </div>
+            <p>
+              Limitations, opportunities, and and implications for climate adaptation.
+              Conducted interviews with key geospatial experts in Bishkek, Kyrgyzstan to assess the state of SDI.
+              Presented findings to a large audience of government officials and NGOs, and to the United Nations Development Programme.
+            </p>
+          </details>
+        </div>
     </div>
+
   </div>
 
 </body>
