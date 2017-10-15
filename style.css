@@ -67,14 +67,17 @@ div {
 
 .button {
   font-size: 1.25rem;
-  background: #e57373;
   text-align: center;
   width: 90px;
   padding: 5px 0px;
   margin-right: 15px;
 }
 
-.pressed {
+.button.unpressed {
+  background: #e57373;
+}
+
+.button.pressed {
   background: #ffcdd2;
   color: white;
 }
