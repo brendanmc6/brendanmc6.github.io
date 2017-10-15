@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://use.fontawesome.com/25a8753216.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="banner-image card-4"></div>
+  <div class="banner card-4">
+    <div class="logo">
+      Brendan McGill
+    </div>
+    <div class="button-container">
+      <a href="./index.html"><div class="button card-1">resume</div></a>
+      <div class="button" style="background: #ffcdd2; color: white;">portfolio</div>
+      <div class="button card-1">extra</div>
+    </div>
+  </div>
+  <div class="portfolio container">
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/VisionKarlsruheThumb.jpg);" href="http://visionkarlsruhe.bike"></a>
+      <details id="details-1"  onmouseover="hoverOpen('details-1')" onmouseleave="hoverClose('details-1')">
+        <summary><i class="material-icons">web</i>http://VisionKarlsruhe.bike</summary>
+        <p>
+          Using ESRI WebApp Builder and the ArcGIS Online platform, I built this participatory web application for an EU funded project with EIFER and as the subject of my Master's thesis research.
+          Users could interact with a map to suggest high-speed bike lanes, e-bike charging and sharing stations, and leave comments.
+          I presented the work and findings at the 2017 Esri Roadshow in Mannheim, a GIS forum for the City of Karlsruhe, and at the NTNU Sustainability Conference in Trondheim, Norway.
+          <br/> Checkout the results tab (Section 4) to see the crowdsourced results!
+        </p>
+      </details>
+    </div>
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/HeatmapThumb.png);" href="./Images/HeatmapThumb.png"></a>
+      <details id="details-2"  onmouseover="hoverOpen('details-2')" onmouseleave="hoverClose('details-2')">
+        <summary><i class="material-icons">map</i>Heat map of desired bike-lanes in Karlsruhe</summary>
+        <p>
+          This is an example of the types of analysis that can be done with the data from visionkarlsruhe.bike.
+          To make this I just generated a vector layer comprised of 7500m2 hexagons, spatial-joined it with the crowdsourced polyline data, and based each feature's transparency on the number of intersecting lines.
+          Such a simple participatory mapping method can produce meaningful data for planners--
+          for example, it's clear from this map alone that better east-west connections are needed, and that the connection to Durlach in the east is lacking.
+        </p>
+      </details>
+    </div>
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/WebsiteThumb.jpg);"></a>
+      <details id="details-3"  onmouseover="hoverOpen('details-3')" onmouseleave="hoverClose('details-3')">
+        <summary><i class="material-icons">web</i>This website</summary>
+        <p>
+          I have some ideas for a participatory web mapping platform based on everything I learned making visionkarlsruhe.bike-- so I decided to try my hand at web development and see how far I get.
+          I built this page using raw HTML and CSS (no bootstrap, templates, or frameworks), trying my best to follow Google's Material Design guidelines and responsive design principals (try it on your smartphone!).
+          Soon I hope to start learning how to use basemap services and javascript to create my own interactive web mapping tool.
+        </p>
+      </details>
+    </div>
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/FreiburgDensity.png);" href="./Images/FreiburgDensity.png"></a>
+      <details id="details-4"  onmouseover="hoverOpen('details-4')" onmouseleave="hoverClose('details-4')">
+        <summary><i class="material-icons">map</i>Densification in Freiburg</summary>
+        <p>
+          Freiburg is renowned in the world of planning for its bike- and transit-friendly policies.
+          I was curious how that looked in reality regarding sprawl and densification, so me and a few classmates did some spatial analysis using the data that was available to us.
+          When I make simple maps like these I try to add subtle aesthetic touches, like the grey building footprints and green forest polygons on top of a minimalistic basemap.
+          The city really is growing upwards, not outwards, and that combination of vibrant density surrounded by natural beauty makes Freiburg one of my favorite cities in the world.
+        </p>
+      </details>
+    </div>
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/ImpactMapThumb.jpg);" href="./Images/ImpactMap.jpg"></a>
+      <details id="details-5"  onmouseover="hoverOpen('details-5')" onmouseleave="hoverClose('details-5')">
+        <summary><i class="material-icons">map</i>Habitat impact map</summary>
+        <p>
+          This is just one of the hundreds of habitat impact, environmental impact, and other development related maps I made as a GIS analyst for REC Consultants, Inc.
+          I worked between our civil engineers and biologists to calculate the area of habitat destroyed by a given project, or to track and support mitigation and restoration efforts, along with other tasks related to the environmental permitting and development process in San Diego.
+        </p>
+      </details>
+    </div>
+
+    <div class="portfolio content card-3">
+      <a class="thumbnail" style="background-image: url(./Images/PublicNoticeThumb.jpg);" href="./Images/PublicNotice.jpg"></a>
+      <details id="details-6"  onmouseover="hoverOpen('details-6')" onmouseleave="hoverClose('details-6')">
+        <summary><i class="material-icons">code</i>Mapping with python</summary>
+        <p>
+          Thanks to Codecademy and a lot of trial and error, I managed to wrap my head around Python and ArcPy-- this map was generated automatically with nothing more than a parcel number.
+          While I don't think I ever recouped the time I invested in learning the language and writing the script, this reduced a repetitive, hour long workflow down to a few minutes.
+          I managed to write a few other time-saving scripts as well, like one that clips a massive parcel layer down to my map-extent to save on load times, and another that calculates habitat impacts and exports them to a table.
+        </p>
+      </details>
+    </div>
+
+
+  </div>
+
+<script>
+  function hoverOpen(param) {
+      document.getElementById(param).open = true;
+  }
+  function hoverClose(param) {
+      document.getElementById(param).open = false;
+  }
+</script>
+</body>
+</html>
