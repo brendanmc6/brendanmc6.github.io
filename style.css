@@ -74,6 +74,11 @@ div {
   margin-right: 15px;
 }
 
+.pressed {
+  background: #ffcdd2;
+  color: white;
+}
+
 .container {
   display: flex;
   position: relative;
